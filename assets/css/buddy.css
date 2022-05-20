@@ -71,7 +71,7 @@ header {
   }
  
   
-  /* Hero Style Start */
+  /* Home PageHero  */
 .hero {
     background-image: url("../images/hero-bg.jpeg");
     height: 600px;
@@ -260,3 +260,15 @@ margin: 0 5px;
   }
   
   /* REACH OUT STYLES END */
+  
+  .page-title {
+    color: #fce138;
+    display: inline-block;
+    border-bottom: solid ;
+    border-bottom: #fce138;
+    border-bottom: 4px ;
+    padding: 0 80px 15px 80px;
+    font-weight: normal;
+    font-size: 35px;
+    font-style: italic;
+}

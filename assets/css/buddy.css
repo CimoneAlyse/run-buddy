@@ -99,7 +99,6 @@ section {
 .hero {
   background-image: url('../images/hero-bg.jpeg');
   background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -124,7 +123,7 @@ section {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.hero-form button:hover{
+.hero-form {
   border: 3px solid #024e76;
   background-color: rgb(252, 225, 56);
   padding: 20px;
@@ -133,6 +132,9 @@ section {
   margin: 3.5%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
+}
+.hero-form button:hover {
+  background-color: #39a6b2;  
 }
 
 .hero-form h3 {
@@ -220,8 +222,12 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #39a6b2;
+  
 }
+.step:last-child {
+  border-bottom: none;
+}
+
 
 .step h3 {
   color: #024e76;
@@ -259,13 +265,7 @@ section {
   line-height: 1.5;
   color: #024e76;
 }
-.step:nth-child(even) {
-  border-bottom: 1px solid #39a6b2;
-}
 
-.step:last-child {
-  border-bottom: none;
-}
 
 
 /* WHAT YOU DO STYLES END */
@@ -364,12 +364,12 @@ section {
   
 }
 .contact-form input:focus, .contact-form textarea:focus {
-  background-color: rgba(255,255,255, 0.75)
-  outline: none
+  background-color: rgba(255,255,255, 0.75);
+  outline: none ;
 }
 
 
-.contact-form button:hover {
+.contact-form button {
   width: 100%;
   border: none;
   background: #fce138;
@@ -379,7 +379,10 @@ section {
   font-size: 16px;
   border-radius: 10px;
 }
-
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
 .contact-info a {
   color: #fce138;
 }
